@@ -1,9 +1,13 @@
 {
   "categorias": [
     {
-      "titulo": "Séries",
+      "titulo": "Séries de Comédia",
       "link": "https://www.youtube.com",
       "cor": "#00C86F",
+      "link_extra": {
+        "text": "15 dicas para você assistir e se divertir",
+        "url": "https://segredosdomundo.r7.com/series-de-comedia/"
+      },
       "videos": [
         {
           "titulo": "Cansado(a) dos noticiários? Aqui você vai abstrair toda tensão do momento atual e rir um bocado",
@@ -86,46 +90,50 @@
       ]
     },
     {
-      "titulo": "Músicas",
-      "cor": "#9cd33b",
+      "titulo": "Trabalhos Manuais",
+      "cor": "orange",
       "videos": [
         {
           "titulo": "",
           "url": ""
         },
         {
-          "titulo": "Tribalistas 2002 Full Album",
-          "url": "https://youtu.be/QY5rQJ6MKN0"
+          "titulo": "QUANTO COBRAR PELA PEÇA?",
+          "url": "https://youtu.be/Rtta4_cLK9w"
         },
         {
-          "titulo": "Natiruts Acústico Ao Vivo",
-          "url": "https://youtu.be/fJoiws-6mvY"
+          "titulo": "Aprenda o básico do Macramê - Aula básica Para Iniciantes",
+          "url": "https://youtu.be/UsPIRkyD9bc"
         },
         {
-          "titulo": "Onze:20",
-          "url": "https://youtu.be/SL590YzPrbY"
+          "titulo": "Amigurumi do Zero #1 - Materiais Básicos + Correntinha",
+          "url": "https://youtu.be/AilLf-Ql4iQ"
         },
         {
-          "titulo": "Ivete Sangalo FV 20",
-          "url": "https://youtu.be/y0OZtAV3nBg"
+          "titulo": "FAÇA SUA PRÓPRIA BLUSA TIE DYE I HOW TO TIE DYE I DIDA OLIVER",
+          "url": "https://youtu.be/80RoOVV378c"
+        },
+        {
+          "titulo": "Aula de crochê para iniciantes | Aprenda crochê do zero em 5 passos - JNY Crochê",
+          "url": "https://youtu.be/ZQM1GS3uDz8"
+        },
+        {
+          "titulo": "Como iniciar no bordado à mão - Parte 01",
+          "url": "https://youtu.be/KKd90Bka5ss"
         }
       ]
     },
     {
       "titulo": "Meditação",
-      "cor": "orange",
+      "cor": "#DB7093",
       "link_extra": {
-        "text": "Aprenda a meditar",
-        "url": "https://www.youtube.com/results?search_query=aprendendo+a+meditar"
+        "text": "Quais os benefícios da meditação?",
+        "url": "https://catracalivre.com.br/equilibre-se/7-beneficios-da-meditacao-para-sua-vida/"
       },
       "videos": [
         {
           "titulo": "",
           "url": ""
-        },
-        {
-          "titulo": "MEDITAÇÃO PARA INICIANTES",
-          "url": "https://youtu.be/zfy24tsbuI4"
         },
         {
           "titulo": "Aprender a Meditar - Como Meditar - Meditação Feliz Com Você",
@@ -134,16 +142,16 @@
         {
           "titulo": "Como meditar? | Monja Coen explica o ZAZEN | Meditação Zen Budista",
           "url": "https://youtu.be/pRpayFySsto"
+        },
+        {
+          "titulo": "MEDITAÇÃO PARA INICIANTES",
+          "url": "https://youtu.be/zfy24tsbuI4"
         }
       ]
     },
     {
       "titulo": "Yoga",
       "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
           "titulo": "",
@@ -172,8 +180,12 @@
       ]
     },
     {
-      "titulo": "BÔNUS",
-      "cor": "red",
+      "titulo": "BÔNUS - Decoração",
+      "cor": "#FF4500",
+      "link_extra": {
+        "text": "Se você chegou até aqui, confira as melhores dicas de decoração para sua casa",
+        "url": "https://archtrends.com/blog/dicas-de-decoracao-para-sala/"
+      },
       "videos": [
         {
           "titulo": "",

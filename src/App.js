@@ -12,7 +12,7 @@ function App() {
       <BannerMain 
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="Abaixo selecionamos as melhores séries de comédia, alguns filmes e músicas, além de tutoriais de meditação e yoga para relaxar"
+        videoDescription="Abaixo selecionei algumas dicas de como passar o tempo nessa quarentena. As melhores séries de comédia, alguns filmes, trabalhos manuais, além de tutoriais de meditação e yoga para relaxar"
       />
       <Carousel 
         ignoreFirstVideo
