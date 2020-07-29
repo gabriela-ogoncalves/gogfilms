@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
-
+  --card-width: 298px;
+  --card-height: 197px;
   border: 2px solid;
-  border-radius: 4px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   color: white;
-  flex: 0 0 298px;
-  width: 298px;
-  height: 197px;
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
+  height: var(--card-height);
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
@@ -19,20 +19,12 @@ export const VideoCardContainer = styled.a`
   display: flex;
   align-items: flex-end;
   padding: 16px;
-
-  transform: translateX(8%);
-  transition: .3s all;
-  &:hover {
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 5px;
-    transform:scale(1.10);
-  }
+  transition: all 0.5s;
+  &:hover,
   &:focus {
-    opacity: .5;
+    margin: 0 50px;
+    transform: scale(1.4);
   }
-  
   &:not(:first-child) {
     margin-left: 20px;
   }

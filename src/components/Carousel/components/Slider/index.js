@@ -17,19 +17,33 @@ const Container = styled.ul`
     transform: initial;
     &:before {
       font-size: 30px;
+      color:${props => props.arrowColor};
     }
   }
-  
+  .slick-list {
+    overflow: visible !important;
+    margin-left: 15px;
+  }
   .slick-prev {
-    left: 0;
+    left: 0px;
   }
   .slick-next {
     right: 16px;
+  }
+  .slick-dots li button:before{
+    color: white;
+  }
+  .slick-dots li.slick-active button:before {
+    color: ${props => props.arrowColor};;
+  }
+  .slick-dots {
+    margin-bottom: -30px;
   }
 `;
 
 export const SliderItem = styled.li`
   margin-right: 16px;
+  margin-left: 16px;
   img {
     margin: 16px;
     width: 298px;
@@ -38,39 +52,41 @@ export const SliderItem = styled.li`
   }
 `;
 
-const Slider = ({ children }) => (
-  <Container>
+const Slider = ({ children, arrowColor }) => (
+  <Container arrowColor={arrowColor}>
     <SlickSlider {...{
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      //slidesToShow: 4,
       centerMode: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            dots: true,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      variableWidth: true,
+      adaptiveHeight: true,
+      // responsive: [
+      //   {
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 3,
+      //       dots: true,
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 600,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2,
+      //       initialSlide: 2
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 480,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   }
+      // ]
     }}
     >
       {children}
