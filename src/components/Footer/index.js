@@ -19,7 +19,7 @@ function Footer() {
       <p>
         Acessando o
         {' '}
-        <a href="https://www.github.com/gabriela-ogoncalves">
+        <a href="https://www.github.com/gabriela-ogoncalves/gogfilms">
           repositório
         </a>
         {' '}
