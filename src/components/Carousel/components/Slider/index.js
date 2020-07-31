@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import SlickSlider from 'react-slick';
@@ -17,7 +18,7 @@ const Container = styled.ul`
     transform: initial;
     &:before {
       font-size: 30px;
-      color:${props => props.arrowColor};
+      color:${(props) => props.arrowColor};
     }
   }
   .slick-list {
@@ -34,7 +35,7 @@ const Container = styled.ul`
     color: white;
   }
   .slick-dots li.slick-active button:before {
-    color: ${props => props.arrowColor};;
+    color: ${(props) => props.arrowColor};;
   }
   .slick-dots {
     margin-bottom: -30px;
@@ -58,7 +59,7 @@ const Slider = ({ children, arrowColor }) => (
       dots: true,
       infinite: true,
       speed: 500,
-      //slidesToShow: 4,
+      // slidesToShow: 4,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,

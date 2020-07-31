@@ -100,7 +100,7 @@ export const BannerMainContainer = styled.section`
   }
 `;
 
-export const WatchButton = styled.button`
+const WatchButton = styled.button`
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   cursor: pointer;
@@ -123,3 +123,5 @@ export const WatchButton = styled.button`
     display: block;
   }
 `;
+
+export default WatchButton;
