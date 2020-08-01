@@ -101,7 +101,6 @@ export const BannerMainContainer = styled.section`
 `;
 
 const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
