@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ReactLoading from 'react-loading';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
@@ -41,8 +42,9 @@ function CadastroCategoria() {
 
   useEffect(() => {
     // o que a gente quer que aconteça
-    console.log('alo alo');
-    const URL = 'http://localhost:8080/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://gogfilms.herokuapp.com/categorias';
     fetch(URL)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -91,9 +93,10 @@ function CadastroCategoria() {
       </form>
       {categorias.length === 0
       && (
-      <div>
-        Loading...
-      </div>
+        <div>
+          Loading...
+          <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
+        </div>
       )}
       <ul>
         {categorias.map((categoria) => (
