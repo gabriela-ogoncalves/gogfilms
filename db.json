@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Séries de Comédia",
+            "descrição": "Você vai rir",
+            "cor": "#00C86F"
+        },
+        {
+            "id": 2,
+            "nome": "Filmes",
+            "descrição": "Alguns filmes clássicos",
+            "cor": "#6b5be2"
+        }
+    ]
+}
