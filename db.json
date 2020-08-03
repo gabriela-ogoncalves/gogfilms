@@ -1,16 +1,257 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Séries de Comédia",
-            "descrição": "Você vai rir",
-            "cor": "#00C86F"
-        },
-        {
-            "id": 2,
-            "nome": "Filmes",
-            "descrição": "Alguns filmes clássicos",
-            "cor": "#6b5be2"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Séries de Comédia",
+      "link": "https://www.youtube.com",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "15 dicas para você assistir e se divertir",
+        "url": "https://segredosdomundo.r7.com/series-de-comedia/"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Filmes",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Confira a lista dos melhores filmes de 2020",
+        "url": "https://www.omelete.com.br/filmes/os-melhores-filmes-de-2020-ate-agora#11"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Trabalhos Manuais",
+      "cor": "orange"
+    },
+    {
+      "id": 4,
+      "titulo": "Meditação",
+      "cor": "#DB7093",
+      "link_extra": {
+        "text": "Quais os benefícios da meditação?",
+        "url": "https://catracalivre.com.br/equilibre-se/7-beneficios-da-meditacao-para-sua-vida/"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Yoga",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 6,
+      "titulo": "Decoração",
+      "cor": "#FF4500",
+      "link_extra": {
+        "text": "Se você chegou até aqui, confira as melhores dicas de decoração para sua casa",
+        "url": "https://archtrends.com/blog/dicas-de-decoracao-para-sala/"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Cansado(a) dos noticiários? Aqui você vai abstrair toda tensão do momento atual e rir um bocado",
+      "url": "https://youtu.be/mBzxvIQmvro"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Top 10 Momentos Da Série Friends",
+      "url": "https://youtu.be/2Tatxt3NgYo"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Algumas das melhores cenas de HIMYM",
+      "url": "https://www.youtube.com/watch?v=gi1GYaeXj1w&t=1s"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "The Office US - Best Moments - ALL SEASONS",
+      "url": "https://youtu.be/DVPEsKCL20Q"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "TOP MELHORES MITAGENS EM EU A PATROA E AS CRIANÇAS",
+      "url": "https://www.youtube.com/watch?v=xerYUUV3JIA"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Melhores momentos de todo mundo odeia o Chris",
+      "url": "https://www.youtube.com/watch?v=spclDde6fgg"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Dois Homens e Meio - MELHORES MOMENTOS - 2° temporada",
+      "url": "https://www.youtube.com/watch?v=E6A2gaXfkVw&t=5s"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "As cenas mais engraçadas de The Big Bang Theory | As melhores selecionadas",
+      "url": "https://www.youtube.com/watch?v=KKuDfpIWk7E"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "As melhores cenas de Brooklyn Nine-Nine | Temporadas 1 A 5 |",
+      "url": "https://www.youtube.com/watch?v=enOnjI4tGJM"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "O Pequeno Príncipe",
+      "url": "https://youtu.be/KNF2Xw6kuGk"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Como se fosse a primeira vez",
+      "url": "https://youtu.be/x6A_3Y9ML70"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Matrix",
+      "url": "https://youtu.be/VbfdKZ3xxPE"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "10 coisas que eu odeio em você",
+      "url": "https://youtu.be/fP5huAf2Xig"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Brilho Eterno de Uma Mente Sem Lembranças",
+      "url": "https://youtu.be/EwFpklTOLLA"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "Cidade dos Anjos",
+      "url": "https://youtu.be/sADycVZf1DA"
+    },
+    {
+      "id": 17,
+      "categoriaId": 2,
+      "titulo": "Marley & Eu",
+      "url": "https://youtu.be/eC9rI4tPWrA"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "QUANTO COBRAR PELA PEÇA?",
+      "url": "https://youtu.be/Rtta4_cLK9w"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "Aprenda o básico do Macramê - Aula básica Para Iniciantes",
+      "url": "https://youtu.be/UsPIRkyD9bc"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "Amigurumi do Zero #1 - Materiais Básicos + Correntinha",
+      "url": "https://youtu.be/AilLf-Ql4iQ"
+    },
+    {
+      "id": 21,
+      "categoriaId": 3,
+      "titulo": "FAÇA SUA PRÓPRIA BLUSA TIE DYE I HOW TO TIE DYE I DIDA OLIVER",
+      "url": "https://youtu.be/80RoOVV378c"
+    },
+    {
+      "id": 22,
+      "categoriaId": 3,
+      "titulo": "Aula de crochê para iniciantes | Aprenda crochê do zero em 5 passos",
+      "url": "https://youtu.be/ZQM1GS3uDz8"
+    },
+    {
+      "id": 23,
+      "categoriaId": 3,
+      "titulo": "Como iniciar no bordado à mão - Parte 01",
+      "url": "https://youtu.be/KKd90Bka5ss"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "titulo": "Aprender a Meditar - Como Meditar - Meditação Feliz Com Você",
+      "url": "https://youtu.be/HEVqg4NWozo"
+    },
+    {
+      "id": 25,
+      "categoriaId": 4,
+      "titulo": "Como meditar? | Monja Coen explica o ZAZEN | Meditação Zen Budista",
+      "url": "https://youtu.be/pRpayFySsto"
+    },
+    {
+      "id": 26,
+      "categoriaId": 4,
+      "titulo": "MEDITAÇÃO PARA INICIANTES",
+      "url": "https://youtu.be/zfy24tsbuI4"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "Yoga para Iniciantes: FORTALECENDO e ALONGANDO o CORPO TODO",
+      "url": "https://www.youtube.com/watch?v=QbxPUFl3cuc"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "titulo": "Yoga para Dor nas Costas (ALIVIAR e FORTALECER a Coluna)",
+      "url": "https://www.youtube.com/watch?v=sXSzAeOADbE"
+    },
+    {
+      "id": 29,
+      "categoriaId": 5,
+      "titulo": "Yoga para Dormir Bem: ALONGAMENTO para RELAXAR",
+      "url": "https://www.youtube.com/watch?v=VoO1Psq-eY4"
+    },
+    {
+      "id": 30,
+      "categoriaId": 5,
+      "titulo": "Yoga Para Pescoço e Ombros: ALONGAR, FORTALECER, REDUZIR DORES e Aumentar MOBILIDADE",
+      "url": "https://www.youtube.com/watch?v=P0ZqAjxxMiY"
+    },
+    {
+      "id": 31,
+      "categoriaId": 5,
+      "titulo": "Yoga para Ansiedade: REDUZA O ESTRESSE e VIVA O AGORA",
+      "url": "https://youtu.be/5aHGlekF2lQ"
+    },
+    {
+      "id": 32,
+      "categoriaId": 6,
+      "titulo": "Jardim vertical de baixo custo",
+      "url": "https://www.youtube.com/watch?v=Aznxz1rtTlI"
+    },
+    {
+      "id": 33,
+      "categoriaId": 6,
+      "titulo": "NOVA DECORAÇÃO DO QUARTO | ESTILO PINTEREST",
+      "url": "https://www.youtube.com/watch?v=ZLPTK_qMkrI"
+    },
+    {
+      "id": 34,
+      "categoriaId": 6,
+      "titulo": "10 dicas para a Cozinha dos Sonhos | Decoração",
+      "url": "https://www.youtube.com/watch?v=whv-3SGGrN0"
+    },
+    {
+      "titulo": "teste",
+      "url": "http://localhost:8080/videos",
+      "categoriaId": 1,
+      "id": 35
+    }
+  ]
 }

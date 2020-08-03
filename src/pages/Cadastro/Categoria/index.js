@@ -1,44 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import ReactLoading from 'react-loading';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
-    cor: '',
+    cor: '#000000',
   };
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
-
-  // dá submit no form e limpa os dados com os valores iniciais
-  function handleSubmit(infoDoEvento) {
-    infoDoEvento.preventDefault();
-    setCategorias([
-      ...categorias,
-      valores,
-    ]);
-    setValores(valoresIniciais);
-  }
-
-  // setando os valores (obs: chave = nome, descricao, cor etc)
-  function setValor(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor, // ex -> nome: 'valor'
-    });
-  }
-
-  // mudando os valores dos campos através do setValor
-  function handleChange(infoDoEvento) {
-    setValor(
-      infoDoEvento.target.getAttribute('name'),
-      infoDoEvento.target.value,
-    );
-  }
+  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
 
   useEffect(() => {
     // o que a gente quer que aconteça
@@ -55,22 +29,30 @@ function CadastroCategoria() {
   }, [
     // quando queremos que aconteça (opcional)
     // se array for vazio, vai acontecer apenas 1x no carregamento da página
-    valores.nome,
   ]);
 
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {valores.nome}
+        {' '}
+        {valores.titulo}
       </h1>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
+        setCategorias([
+          ...categorias,
+          valores,
+        ]);
+        clearForm();
+      }}
+      >
         <FormField
           label="Nome da Categoria"
           type="text"
-          value={valores.nome}
-          name="nome"
+          value={valores.titulo}
+          name="titulo"
           onChange={handleChange}
         />
 
@@ -100,15 +82,11 @@ function CadastroCategoria() {
       )}
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
-
-      <Link to="/cadastro/video">
-        Cadastro de Video
-      </Link>
     </PageDefault>
   );
 }
