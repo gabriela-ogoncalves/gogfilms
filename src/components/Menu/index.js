@@ -24,7 +24,7 @@ function Menu() {
           </div>
         </div>
         <div className="dropdown">
-          <button className="dropbtn" type="button">Vídeos</button>
+          <button className="dropbtn" type="button">Vídeo</button>
           <div className="dropdown-content">
             <Link to="/cadastro/video"> Novo vídeo </Link>
             <Link to="/cadastro/"> Editar vídeo </Link>
