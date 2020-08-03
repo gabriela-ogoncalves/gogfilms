@@ -246,12 +246,6 @@
       "categoriaId": 6,
       "titulo": "10 dicas para a Cozinha dos Sonhos | Decoração",
       "url": "https://www.youtube.com/watch?v=whv-3SGGrN0"
-    },
-    {
-      "titulo": "teste",
-      "url": "http://localhost:8080/videos",
-      "categoriaId": 1,
-      "id": 35
     }
   ]
 }

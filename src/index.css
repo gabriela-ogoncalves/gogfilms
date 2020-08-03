@@ -24,6 +24,10 @@ a {
   color: inherit;
 } 
 
+h1 {
+  text-align: center;
+}
+
 #root {
   min-height: calc(100vh - var(--bodyPaddingTop));
   display: flex;

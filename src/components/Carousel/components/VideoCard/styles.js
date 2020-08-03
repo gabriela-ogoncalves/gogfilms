@@ -36,7 +36,6 @@ const VideoCardContainer = styled.a`
   & > span {
     width: 100%;
     height: 40%;
-    background-color: rgba(0,0,0,0.8);
     padding: 20px;
     font-weight: bold;
     font-size: 18px;

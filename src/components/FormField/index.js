@@ -4,10 +4,13 @@ import styled, { css } from 'styled-components';
 
 const FormFieldWrapper = styled.div`
   position: relative;
+  width: 60%;
+
   textarea {
     min-height: 150px;
   }
   input[type="color"] {
+    width: 30%;
     padding-left: 56px;
   }
 `;
@@ -24,6 +27,7 @@ Label.Text = styled.span`
   
   display: flex;
   align-items: center;
+  justify-self: center;
   
   transform-origin: 0% 0%;
   font-size: 18px;
@@ -97,7 +101,6 @@ function FormField({
         />
         <Label.Text>
           {label}
-          :
         </Label.Text>
         {
           hasSuggestions
