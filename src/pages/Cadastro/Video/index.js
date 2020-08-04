@@ -29,49 +29,51 @@ function CadastroVideo() {
   return (
     <PageDefault>
       <h1>Cadastro de Vídeo</h1>
+      <div style={{ margin: '10px 100px' }}>
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        const categoriaEscolhida = categorias
-          .find((categoria) => categoria.titulo === valores.categoria);
-        videosRepository.create({
-          titulo: valores.titulo,
-          url: valores.url,
-          categoriaId: categoriaEscolhida,
-        })
-          .then(() => {
-            // eslint-disable-next-line no-console
-            console.log('Cadastrou com sucesso');
-            history.push('/');
-          });
-      }}
-      >
-        <FormField
-          label="Título do Vídeo"
-          type="text"
-          value={valores.titulo}
-          name="titulo"
-          onChange={handleChange}
-        />
+        <form onSubmit={(event) => {
+          event.preventDefault();
+          const categoriaEscolhida = categorias
+            .find((categoria) => categoria.titulo === valores.categoria);
+          videosRepository.create({
+            titulo: valores.titulo,
+            url: valores.url,
+            categoriaId: categoriaEscolhida,
+          })
+            .then(() => {
+              // eslint-disable-next-line no-console
+              console.log('Cadastrou com sucesso');
+              history.push('/');
+            });
+        }}
+        >
+          <FormField
+            label="Título do Vídeo"
+            type="text"
+            value={valores.titulo}
+            name="titulo"
+            onChange={handleChange}
+          />
 
-        <FormField
-          label="URL"
-          type="url"
-          value={valores.url}
-          name="url"
-          onChange={handleChange}
-        />
+          <FormField
+            label="URL"
+            type="url"
+            value={valores.url}
+            name="url"
+            onChange={handleChange}
+          />
 
-        <FormField
-          label="Categoria"
-          type="categoria"
-          value={valores.categoria}
-          name="categoria"
-          onChange={handleChange}
-          suggestions={categoryTitles}
-        />
-        <Button> Cadastrar </Button>
-      </form>
+          <FormField
+            label="Categoria"
+            type="categoria"
+            value={valores.categoria}
+            name="categoria"
+            onChange={handleChange}
+            suggestions={categoryTitles}
+          />
+          <Button> Cadastrar </Button>
+        </form>
+      </div>
     </PageDefault>
   );
 }

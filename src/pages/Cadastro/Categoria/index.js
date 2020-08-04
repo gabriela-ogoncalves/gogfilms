@@ -38,55 +38,57 @@ function CadastroCategoria() {
         {' '}
         {valores.titulo}
       </h1>
+      <div style={{ margin: '10px 100px' }}>
+        <form
+          onSubmit={function handleSubmit(infosDoEvento) {
+            infosDoEvento.preventDefault();
+            setCategorias([
+              ...categorias,
+              valores,
+            ]);
+            clearForm();
+          }}
+        >
+          <FormField
+            label="Nome da Categoria"
+            type="text"
+            value={valores.titulo}
+            name="titulo"
+            onChange={handleChange}
+          />
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          valores,
-        ]);
-        clearForm();
-      }}
-      >
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          value={valores.titulo}
-          name="titulo"
-          onChange={handleChange}
-        />
+          <FormField
+            label="Descrição"
+            type="textarea"
+            value={valores.descricao}
+            name="descricao"
+            onChange={handleChange}
+          />
 
-        <FormField
-          label="Descrição"
-          type="textarea"
-          value={valores.descricao}
-          name="descricao"
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Cor"
-          type="color"
-          value={valores.cor}
-          name="cor"
-          onChange={handleChange}
-        />
-        <Button> Cadastrar </Button>
-      </form>
-      {categorias.length === 0
+          <FormField
+            label="Cor"
+            type="color"
+            value={valores.cor}
+            name="cor"
+            onChange={handleChange}
+          />
+          <Button> Cadastrar </Button>
+        </form>
+        {categorias.length === 0
       && (
         <div>
           Loading...
           <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
         </div>
       )}
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {categorias.map((categoria) => (
+            <li key={`${categoria.titulo}`}>
+              {categoria.titulo}
+            </li>
+          ))}
+        </ul>
+      </div>
     </PageDefault>
   );
 }

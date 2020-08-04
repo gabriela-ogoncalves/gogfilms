@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import ReactLoading from 'react-loading';
+// import ReactLoading from 'react-loading';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
 import SContainer from './styles';
+import Loading from '../../components/Loading';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -24,12 +25,8 @@ function Home() {
     <SContainer>
       <PageDefault paddingAll={0}>
         { dadosIniciais.length === 0 && (
-        <div>
-          Loading...
-          <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
-        </div>
+          <Loading />
         )}
-
         {dadosIniciais.map((categoria, indice) => {
           if (indice === 0) {
             return (

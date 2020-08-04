@@ -4,13 +4,16 @@ import styled, { css } from 'styled-components';
 
 const FormFieldWrapper = styled.div`
   position: relative;
-  width: 60%;
+  width: 100%;
+  text-align: center;
+
 
   textarea {
     min-height: 150px;
   }
   input[type="color"] {
-    width: 30%;
+    width: 100%;
+    height: 57px;
     padding-left: 56px;
   }
 `;
@@ -42,7 +45,7 @@ const Input = styled.input`
   color: #F5F5F5;
   display: block;
   width: 100%;
-  height: 57px;
+  height: 70px;
   font-size: 18px;
   
   outline: 0;
