@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import PageDefault from '../../components/PageDefault';
-import Erro from '../../assets/img/404.gif';
+import Erro from '../../assets/img/notFound.png';
 import './style.css';
 
 function NotFound() {
@@ -26,7 +26,7 @@ function NotFound() {
         cursor: pointer;
         padding: 16px 24px;
         font-style: normal;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 16px;
         outline: none;
         border-radius: 5px;

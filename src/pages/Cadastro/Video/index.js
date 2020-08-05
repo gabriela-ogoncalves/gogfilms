@@ -30,7 +30,7 @@ function CadastroVideo() {
   return (
     <PageDefault>
       <Container>
-        <h1>Cadastro de Vídeo</h1>
+        <h1>CADASTRO DE VÍDEO</h1>
         <form onSubmit={(event) => {
           event.preventDefault();
           const categoriaEscolhida = categorias

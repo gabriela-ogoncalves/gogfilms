@@ -36,7 +36,7 @@ function CadastroCategoria() {
     <PageDefault>
       <Container>
         <h1>
-          Cadastro de Categoria:
+          CADASTRO DE CATEGORIA:
           {' '}
           {valores.titulo}
         </h1>
@@ -79,7 +79,7 @@ function CadastroCategoria() {
       && (
         <div>
           Loading...
-          <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
+          <ReactLoading type="spinningBubbles" color="var(--theme2)" height="50px" width="50px" />
         </div>
       )}
         {/* <ul>

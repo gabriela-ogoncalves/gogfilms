@@ -38,7 +38,7 @@ const Container = styled.ul`
     color: ${(props) => props.arrowColor};;
   }
   .slick-dots {
-    margin-bottom: -30px;
+    margin-bottom: -20px;
   }
 `;
 

@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "Séries de Comédia",
       "link": "https://www.youtube.com",
-      "cor": "#00C86F",
+      "cor": "#4682B4",
       "link_extra": {
         "text": "15 dicas para você assistir e se divertir",
         "url": "https://segredosdomundo.r7.com/series-de-comedia/"
@@ -43,41 +43,17 @@
       "titulo": "Decoração",
       "cor": "#FF4500",
       "link_extra": {
-        "text": "Se você chegou até aqui, confira as melhores dicas de decoração para sua casa",
+        "text": "Confira as melhores dicas de decoração para sua casa",
         "url": "https://archtrends.com/blog/dicas-de-decoracao-para-sala/"
       }
     }
   ],
   "videos": [
     {
-      "id": 1,
-      "categoriaId": 1,
-      "titulo": "Cansado(a) dos noticiários? Aqui você vai abstrair toda tensão do momento atual e rir um bocado",
-      "url": "https://youtu.be/mBzxvIQmvro"
-    },
-    {
       "id": 2,
       "categoriaId": 1,
       "titulo": "Top 10 Momentos Da Série Friends",
       "url": "https://youtu.be/2Tatxt3NgYo"
-    },
-    {
-      "id": 3,
-      "categoriaId": 1,
-      "titulo": "Algumas das melhores cenas de HIMYM",
-      "url": "https://www.youtube.com/watch?v=gi1GYaeXj1w&t=1s"
-    },
-    {
-      "id": 4,
-      "categoriaId": 1,
-      "titulo": "The Office US - Best Moments - ALL SEASONS",
-      "url": "https://youtu.be/DVPEsKCL20Q"
-    },
-    {
-      "id": 5,
-      "categoriaId": 1,
-      "titulo": "TOP MELHORES MITAGENS EM EU A PATROA E AS CRIANÇAS",
-      "url": "https://www.youtube.com/watch?v=xerYUUV3JIA"
     },
     {
       "id": 6,
@@ -96,6 +72,24 @@
       "categoriaId": 1,
       "titulo": "As cenas mais engraçadas de The Big Bang Theory | As melhores selecionadas",
       "url": "https://www.youtube.com/watch?v=KKuDfpIWk7E"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Algumas das melhores cenas de HIMYM",
+      "url": "https://www.youtube.com/watch?v=gi1GYaeXj1w&t=1s"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "The Office US - Best Moments - ALL SEASONS",
+      "url": "https://youtu.be/DVPEsKCL20Q"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "TOP MELHORES MITAGENS EM EU A PATROA E AS CRIANÇAS",
+      "url": "https://www.youtube.com/watch?v=xerYUUV3JIA"
     },
     {
       "id": 9,

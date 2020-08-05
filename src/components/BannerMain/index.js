@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import VideoIframeResponsive from './components/VideoIframeResponsive';
-import WatchButton, { BannerMainContainer, ContentAreaContainer } from './styles';
+// import VideoIframeResponsive from './components/VideoIframeResponsive';
+import { BannerMainContainer, ContentAreaContainer } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -15,6 +15,7 @@ export default function BannerMain({
   videoTitle,
   videoDescription,
   url,
+  bannerImg,
 }) {
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
@@ -33,12 +34,10 @@ export default function BannerMain({
         </ContentAreaContainer.Item>
 
         <ContentAreaContainer.Item>
-          <VideoIframeResponsive
+          {bannerImg}
+          {/* <VideoIframeResponsive
             youtubeID={youTubeID}
-          />
-          {/* <WatchButton>
-            Assistir
-          </WatchButton> */}
+          /> */}
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>

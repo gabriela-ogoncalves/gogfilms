@@ -15,7 +15,8 @@ function Loading() {
 
   return (
     <Container>
-      <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
+      Carregando...
+      <ReactLoading type="bubbles" color="var(--theme2)" height="100px" width="100px" />
     </Container>
   );
 }

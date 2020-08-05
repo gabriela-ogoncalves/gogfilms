@@ -22,8 +22,8 @@ const VideoCardContainer = styled.a`
 
   &:hover,
   &:focus {
-    margin: 0 40px;
-    transform: scale(1.4);
+    margin: 0 25px;
+    transform: scale(1.2);
     & > span {
       display: flex;
       align-items: center;
@@ -37,7 +37,7 @@ const VideoCardContainer = styled.a`
     width: 100%;
     height: 40%;
     padding: 20px;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     display: none;
   }

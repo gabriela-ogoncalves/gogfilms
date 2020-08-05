@@ -3,7 +3,7 @@
     {
       "titulo": "Séries de Comédia",
       "link": "https://www.youtube.com",
-      "cor": "#00C86F",
+      "cor": "#6BD1FF",
       "link_extra": {
         "text": "15 dicas para você assistir e se divertir",
         "url": "https://segredosdomundo.r7.com/series-de-comedia/"
@@ -151,7 +151,7 @@
     },
     {
       "titulo": "Yoga",
-      "cor": "#6BD1FF",
+      "cor": "#00C86F",
       "videos": [
         {
           "titulo": "",

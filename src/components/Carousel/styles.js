@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Title = styled.h3`
+export const Title = styled.h4`
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 1;
   margin-bottom: 32px;
   display: inline-block;
@@ -54,4 +54,5 @@ export const VideoCardGroupContainer = styled.section`
   min-height: 197px;
   margin-left: 5%;
   margin-bottom: 65px;
+  margin-top: 20px;
 `;
