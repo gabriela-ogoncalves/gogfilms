@@ -67,7 +67,6 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       <VideoCardContainer
         url={image}
         style={{ borderColor: categoryColor || 'red' }}
-        title={videoTitle}
         onClick={openModal}
       >
         <span style={{ backgroundColor: categoryColor, opacity: '0.95' || 'white' }}>
