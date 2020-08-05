@@ -62,6 +62,7 @@ const Slider = ({ children, arrowColor }) => (
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
+      slidesToScroll: 2,
     }}
     >
       {children}

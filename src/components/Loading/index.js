@@ -4,14 +4,13 @@ import ReactLoading from 'react-loading';
 
 function Loading() {
   const Container = styled.div`
-        height: 100%;
-        display: flex;
-        flex: 1;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        background: #141414;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--black);
+    --bodyPaddingTop: 20px;
+    min-height: calc(60vh);
+    padding-top: 20vh;
     `;
 
   return (

@@ -4,6 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import Container from '../style';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -33,12 +34,12 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria:
-        {' '}
-        {valores.titulo}
-      </h1>
-      <div style={{ margin: '10px 100px' }}>
+      <Container>
+        <h1>
+          Cadastro de Categoria:
+          {' '}
+          {valores.titulo}
+        </h1>
         <form
           onSubmit={function handleSubmit(infosDoEvento) {
             infosDoEvento.preventDefault();
@@ -72,8 +73,8 @@ function CadastroCategoria() {
             name="cor"
             onChange={handleChange}
           />
-          <Button> Cadastrar </Button>
         </form>
+        <Button> Cadastrar </Button>
         {categorias.length === 0
       && (
         <div>
@@ -81,14 +82,14 @@ function CadastroCategoria() {
           <ReactLoading type="spinningBubbles" color="var(--primary)" height="50px" width="50px" />
         </div>
       )}
-        <ul>
+        {/* <ul>
           {categorias.map((categoria) => (
             <li key={`${categoria.titulo}`}>
               {categoria.titulo}
             </li>
           ))}
-        </ul>
-      </div>
+        </ul> */}
+      </Container>
     </PageDefault>
   );
 }

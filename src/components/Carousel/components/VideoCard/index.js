@@ -20,7 +20,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       style={{ borderColor: categoryColor || 'red' }}
       title={videoTitle}
     >
-      <span style={{ backgroundColor: categoryColor, opacity: '0.9' || 'white' }}>
+      <span style={{ backgroundColor: categoryColor, opacity: '0.95' || 'white' }}>
         {videoTitle}
       </span>
     </VideoCardContainer>

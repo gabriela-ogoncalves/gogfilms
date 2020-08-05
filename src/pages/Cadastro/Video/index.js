@@ -6,6 +6,7 @@ import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
+import Container from '../style';
 
 function CadastroVideo() {
   const history = useHistory();
@@ -28,9 +29,8 @@ function CadastroVideo() {
 
   return (
     <PageDefault>
-      <h1>Cadastro de Vídeo</h1>
-      <div style={{ margin: '10px 100px' }}>
-
+      <Container>
+        <h1>Cadastro de Vídeo</h1>
         <form onSubmit={(event) => {
           event.preventDefault();
           const categoriaEscolhida = categorias
@@ -71,9 +71,9 @@ function CadastroVideo() {
             onChange={handleChange}
             suggestions={categoryTitles}
           />
-          <Button> Cadastrar </Button>
         </form>
-      </div>
+        <Button> Cadastrar </Button>
+      </Container>
     </PageDefault>
   );
 }
