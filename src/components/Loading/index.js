@@ -15,7 +15,7 @@ function Loading() {
     justify-content: center;
   `;
 
-  const P = styled.p`
+  const P = styled.span`
     font-size: 16px;
     font-weight: normal;
   `;

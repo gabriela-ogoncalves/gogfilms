@@ -33,7 +33,7 @@ function Home() {
         <div className="banner-main">
           <section>
             <p>
-              Quer abstrair toda tensão do momento atual e rir um bocado?
+              Quer abstrair toda tensão do momento atual e rir um pouco?
             </p>
             <i>
               Abaixo selecionei algumas dicas de como passar o tempo nessa quarentena.
